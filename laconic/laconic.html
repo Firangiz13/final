@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<link rel="stylesheet" type="text/css" href="assets/css/laconic.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div class="top">
+	  <div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<ul class="menu-top1">
+					<li id="right-border">
+						<i class="fas fa-phone-alt"></i> 
+					    (961) 348-2626
+					</li>
+					<li>
+						<i class="far fa-envelope"></i>
+					    laconic@mail.com
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<ul class="menu-top2">
+					<li id="right-border">
+						<a href="">
+						    <i class="fab fa-vimeo-v"></i>
+				        </a>
+				    </li>
+					<li id="right-border">
+						<a href="">
+						    <i class="fab fa-instagram"></i>
+				        </a>
+				    </li>
+					<li id="right-border">
+						<a href="">
+						    <i class="fab fa-github"></i>
+				        </a>
+				    </li>
+					<li id="right-border">
+						<a href="">
+						    <i class="fab fa-facebook-f"></i>
+				        </a>
+				    </li>
+					<li id="right-border">
+						<a href="">
+						    <i class="fab fa-twitter"></i>
+				        </a>
+				    </li>
+					<li>
+						<a href="">
+							<i class="fab fa-google-plus-g"></i>
+					    </a>
+				    </li>
+				</ul>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+
+
+    <div class="navbar">
+    	<div class="container">
+    	   <img src="assets/img/logo.png">
+		    <ul class="menu">
+	            <li class="list-item">
+	            	<a href="laconic.html">Home</a>
+	            </li>
+	            <li class="list-item">
+	            	<a href="about.html">Pages</a>
+	            </li>
+		        <li class="list-item">
+		        	<a href="portfolio.html">Portfolio</a>
+		        </li>
+		        <li class="list-item">
+		        	<a href="blog.html">Blog</a>
+		        </li>
+		        <li class="list-item">
+		        	<a href="shortcodes.html">Shortcodes</a>
+		        </li>
+		        <li>
+		        	<a href="#">Buy</a>
+		        </li>
+		        <li onclick="search()" style="border-left: 1px solid #eaeaea;">
+		        	<a href="#">
+		        		<i class="fas fa-search" style="font-size: 16px;"></i>
+		        	</a>
+		        </li>
+		        <li id="last" onclick="times()">
+		        	<a href="#">
+		        		<i class="fas fa-times"></i>
+		        	</a>
+		        </li>    
+		    </ul>
+		    <button class="burger">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		  	</button>
+		  	<input type="search" class="press" name="" placeholder="Type And Press Enter">
+		</div>  	
+    </div>
+
+
+
+    <div class="add" id="add">
+    	<form >
+    		<input type="text" name="" placeholder="Search">
+    	</form>
+    	<ul>
+    		<li>
+    			<a href="laconic.html">Home</a>
+    		</li>
+    		<li>
+    			<a href="about.html">Pages</a>
+    		</li>
+    		<li>
+    			<a href="portfolio.html">Porfolio</a>
+    		</li>
+    		<li>
+    			<a href="blog.html">Blog</a>
+    		</li>
+    		<li>
+    			<a href="shortcodes.html">Shortcodes</a>
+    		</li>
+    		<li>
+    			<a href="">Buy</a>
+    		</li>
+    	</ul>
+    </div>
+		    
+
+
+<div class="slider-show">
+	<div class="switchers" id="prev-slide" onclick="addSlides(-1)">
+		<i class="fas fa-chevron-left"></i>
+	</div>
+	<div class="switchers" id="next-slide" onclick="addSlides(1)">
+		<i class="fas fa-chevron-right"></i>
+	</div>
+	<div class="img-slide1 img-slide" id="fun">
+		<div class="container">
+			<div class="row">
+		        <div class="women col-xs-0 col-sm-0 col-md-6 col-lg-6 col-xl-6">
+		        	<img src="assets/img/woman.png">
+		        </div>
+		        <div class="top-caption col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			        <div class="top-title">
+			        	<h1>Beautiful Laconic Design</h1>
+			        </div>
+			        <div class="top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sed nisi dicta. Tempore cupiditate, dolorem nostrum eos illo rerum.
+			        </div>
+			        <div class="buy-btn">	
+			            <a href="">Buy Laconic</a>
+			        </div>
+			    </div>
+		    </div>
+	    </div>
+	</div>
+	<div class="img-slide2 img-slide" id="fun">
+		<div class="container">
+			<div class="row">
+		        <div class="top-caption col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			        <div class="top-title">
+			        	<h1>Beautiful Laconic Design</h1>
+			        </div>
+			        <div class="top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sed nisi dicta. Temporecupiditate, dolorem nostrum eos illo rerum.
+			        </div>
+			        <div class="buy-btn">
+			            <a href="">Buy Laconic</a>
+			        </div>	
+			    </div>
+		    </div>
+	    </div>
+	</div>
+	<div class="img-slide3 img-slide" id="fun">
+		<div class="container">
+			<div class="row">
+				<div class="top-caption col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+			        <div class="top-title">
+			        	<h1>Beautiful Laconic Design</h1>
+			        </div>
+			        <div class="top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sed nisi dicta. Tempore cupiditate, dolorem nostrum eos illo rerum.
+			        </div>
+			        <div class="buy-btn">
+			            <a href="">Buy Laconic</a>
+			        </div>
+			    </div>
+			    <div class="mockup col-xs-0 col-sm-0 col-md-6 col-lg-6 col-xl-6 ">
+			    	<img src="assets/img/mockup.png">
+			    </div>
+		    </div>
+	    </div>
+	</div>
+	
+</div>	
+   
+	  
+		  	            		         
+<section class="three">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+				<div class="words">
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="word-description">
+				    <h3>Created with Love</h3>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, at.</p>
+			    </div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+				<div class="words">
+					<i class="fas fa-sliders-h"></i>
+				</div>
+				<div class="word-description">
+				    <h3>Easy to Customize</h3>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, minima.</p>  
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+				<div class="words">
+					<i class="far fa-star"></i>
+				</div>
+				<div class="word-description">
+				    <h3>Clean Design</h3>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, praesentium.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 ">
+				<div class="words">
+					<i class="fas fa-globe-americas"></i>
+				</div>
+				<div class="word-description">
+				    <h3>Support by Author</h3>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, atque.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="works">
+	<div class="container">
+		<div class="section-title">
+				Our Last Works
+				<a href="">/ See All</a>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio">
+			        <div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					    	    <span>Loft Studio</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-1.jpg">
+				        </a>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+		    	<div class="portfolio">
+			        <div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Laconic</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-2.jpg">
+				        </a>
+			        </div>
+			    </div>
+		    </div>
+		    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-3.jpg">
+				        </a>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+					            <p>design / interior</p>
+					            <i class="fas fa-expand"></i>
+				            </span>
+				            <img src="assets/img/p-4.jpg">
+			            </a>
+			        </div>
+		        </div>
+		    </div>
+		    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+					            <p>design / interior</p>
+					            <i class="fas fa-expand"></i>
+				            </span>
+				            <img src="assets/img/p-5.jpg">
+				        </a>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-6.jpg">
+				        </a>
+				    </div>
+			    </div>
+			</div>
+		    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio hidden">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-7.jpg" >
+				        </a>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio hidden">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-8.jpg">
+				        </a>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio hidden">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-9.jpg">
+				        </a>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio hidden">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+					            <p>design / interior</p>
+					            <i class="fas fa-expand"></i>
+				            </span>
+				            <img src="assets/img/p-10.jpg">
+				        </a>
+				    </div>
+			    </div>
+			</div>	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+		        <div class="portfolio hidden">
+		        	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+					            <p>design / interior</p>
+					            <i class="fas fa-expand"></i>
+				            </span>
+				            <img src="assets/img/p-11.jpg">
+				        </a>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+			    <div class="portfolio hidden">
+			    	<div class="cover3">
+				        <a href="#">
+					        <span class="descr">
+					        	<span>Loft Studio</span>
+						        <p>design / interior</p>
+						        <i class="fas fa-expand"></i>
+					        </span>
+					        <img src="assets/img/p-12.jpg">
+				        </a>
+				    </div>
+			    </div>
+			</div>
+		</div>
+		<div class="more" onclick="all()">
+		    <span>Load All</span>
+	    </div>
+	</div>
+</section>
+
+<div class="team-section">
+    <div class="container">
+    	<div class="testimonials-title">Testimonials<span> / What Our Clients Say</span></div>
+    	<div class="row">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                    <div class="testimonial-image cell-left">
+                        <img src="http://tivatheme.com/wordpress/wp-content/plugins/tiva-testimonials-slider/images/agnes.jpg" alt="Agnes A. Bell">
+                    </div>
+                    <div class="cell-right">
+                        <div class="testimonial-name">Agnes A. Bell
+                        </div>
+                        <div class="testimonial-job">Assistant Project Manager
+                        </div>
+                    </div>
+                    <div class="testimonial-content quote"><i class="fa fa-quote-left">  
+                        </i>This is one of the best WordPress themes I have used. All aspects are exactly what experienced designers and developers crave from a theme.
+                    </div>
+                </div>
+                <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                    <div class="testimonial-image cell-left">
+                        <img src="http://tivatheme.com/wordpress/wp-content/plugins/tiva-testimonials-slider/images/agnes.jpg" alt="Agnes A. Bell">
+                    </div>
+                    <div class="cell-right">
+                        <div class="testimonial-name">Agnes A. Bell
+                        </div>
+                        <div class="testimonial-job">Assistant Project Manager
+                        </div>
+                    </div>
+                    <div class="testimonial-content quote"><i class="fa fa-quote-left">  
+                        </i>This is one of the best WordPress themes I have used. All aspects are exactly what experienced designers and developers crave from a theme.
+                    </div>
+                </div>
+                <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                    <div class="testimonial-image cell-left">
+                        <img src="http://tivatheme.com/wordpress/wp-content/plugins/tiva-testimonials-slider/images/agnes.jpg" alt="Agnes A. Bell">
+                    </div>
+                    <div class="cell-right">
+                        <div class="testimonial-name">Agnes A. Bell
+                        </div>
+                        <div class="testimonial-job">Assistant Project Manager
+                        </div>
+                    </div>
+                    <div class="testimonial-content quote"><i class="fa fa-quote-left">  
+                        </i>This is one of the best WordPress themes I have used. All aspects are exactly what experienced designers and developers crave from a theme.
+                    </div>
+                </div>
+                <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                    <div class="testimonial-image cell-left">
+                        <img src="http://tivatheme.com/wordpress/wp-content/plugins/tiva-testimonials-slider/images/agnes.jpg" alt="Agnes A. Bell">
+                    </div>
+                    <div class="cell-right">
+                        <div class="testimonial-name">Agnes A. Bell
+                        </div>
+                        <div class="testimonial-job">Assistant Project Manager
+                        </div>
+                    </div>
+                    <div class="testimonial-content quote"><i class="fa fa-quote-left">  
+                        </i>This is one of the best WordPress themes I have used. All aspects are exactly what experienced designers and developers crave from a theme.
+                    </div>
+                </div>
+                <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                    <div class="testimonial-image cell-left">
+                        <img src="http://tivatheme.com/wordpress/wp-content/plugins/tiva-testimonials-slider/images/agnes.jpg" alt="Agnes A. Bell">
+                    </div>
+                    <div class="cell-right">
+                        <div class="testimonial-name">Agnes A. Bell
+                        </div>
+                        <div class="testimonial-job">Assistant Project Manager
+                        </div>
+                    </div>
+                    <div class="testimonial-content quote"><i class="fa fa-quote-left">  
+                        </i>This is one of the best WordPress themes I have used. All aspects are exactly what experienced designers and developers crave from a theme.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+
+<div class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<div class="about-section">
+					<div class="about-title">
+						About Us
+						<a href="">/ Learn More</a>
+					</div>
+				</div>
+				<div class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam veritatis, molestiae enim magni maiores iste repellendus quas illum modi repellat quasi labore nihil omnis praesentium commodi sequi. Repellendus ipsa perspiciatis iusto nobis doloremque dignissimos ab illo! Commodi, iste veritatis aperiam hic. Itaque excepturi, earum aperiam, accusamus aliquid neque delectus.
+				</div>
+				<div class="progress-wrap">
+					<div class="progress-item">
+						<div class="progress-circle">
+							<canvas id="myCanvas"></canvas>
+							<div class="circle-value">
+								82
+								<i class="fas fa-percent"></i>
+							</div>
+						</div>
+							<div class="progress-title">Repeat Clients</div>
+					    </div>
+					<div class="progress-item">
+						<div class="progress-circle">
+							<canvas id="myCanvas"></canvas>
+							<div class="circle-value">
+								92
+								<i class="fas fa-percent"></i>
+							</div>
+						</div>
+							<div class="progress-title">Design Skills</div>
+						</div>
+					<div class="progress-item">
+						<div class="progress-circle">
+							<canvas id="myCanvas"></canvas>
+							<div class="circle-value">
+								60
+								<i class="fas fa-percent"></i>
+							</div>
+						</div>
+							<div class="progress-title">New Clients</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<div class="news-section news-section-old">
+					<div class="news-title">
+						Last News
+						<a href="">/ All Posts</a>
+						<div id="prev" onclick="newSlides(-1)"><i class="fas fa-caret-right"></i></div>
+						<div id="next" onclick="newSlides(1)"><i class="fas fa-caret-left"></i></i></div>
+					</div>
+					<div class="news-carousel">
+						<div class="overlay">
+						    <div class="row">
+						    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							        <div class="news-carousel-item">
+								        <div class="cover5">
+									        <a href="">
+										        <span class="news-span">
+										            <i class="fas fa-link"></i>
+										        </span>
+										        <img class="scale" src="assets/img/b-1.jpg">
+									        </a>
+								        </div>
+								        <div class="news-description">
+								            <a href="">How to Expand Business</a>
+								        </div>
+								        <div class="news-text">
+								            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dicta,inventore ...</p>
+								        </div>  
+								        <div class="news-bottom">
+									        <span>
+									            <i class="fas fa-calendar-day"></i>
+									            May 21, 2016
+									        </span>
+									        <span>
+									            <i class="fas fa-user"></i>
+									            / Admin
+									        </span>
+									        <span style="float: right; padding-top: 5px;">
+									            <i class="fas fa-eye"></i>
+									            256
+									        </span>
+								        </div>
+							        </div>
+							    </div>
+							    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							        <div class="news-carousel-item news-carousel-item2">
+								        <div class="cover5">
+									        <a href="">
+										        <span class="news-span">
+										            <i class="fas fa-link"></i>
+										        </span>
+										        <img class="scale" src="assets/img/b-2.jpg">
+									        </a>
+								        </div>
+								        <div class="news-description">
+								            <a href="">10 Rules of SEO</a>
+								        </div>
+								        <div class="news-text">
+								    	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dicta,inventore ...</p>
+								        </div>
+								        <div class="news-bottom">
+									        <span>
+									            <i class="fas fa-calendar-day"></i>
+									            May 21, 2016
+									        </span>
+								            <span>
+								        	    <i class="fas fa-user"></i>
+								                / Admin
+								            </span>
+								            <span style="float: right; padding-top: 5px; ">
+								        	    <i class="fas fa-eye"></i>
+								                256
+								            </span>
+								        </div>
+							        </div>
+							    </div>
+						    </div>
+					    </div>
+						</div>
+						<div class="overlay">
+						    <div class="row">
+						  	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							        <div class="news-carousel-item">
+								        <div class="cover5">
+									        <a href="">
+										        <span class="news-span">
+										            <i class="fas fa-link"></i>
+										        </span>
+										        <img class="scale" src="assets/img/b-3.jpg">
+									        </a>
+								        </div>
+								        <div class="news-description">
+								            <a href="">How to Expand Business</a>
+								        </div>
+								        <div class="news-text">
+								            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dicta,inventore ...</p>
+								        </div>  
+								        <div class="news-bottom">
+									        <span>
+									            <i class="fas fa-calendar-day"></i>
+									        May 21, 2016
+									        </span>
+									        <span>
+									            <i class="fas fa-user"></i>
+									            / Admin
+									        </span>
+									        <span style="float: right; padding-top: 5px;">
+									        <i class="fas fa-eye"></i>
+									        256
+									        </span>
+								        </div>
+							        </div>
+							    </div>
+							    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							        <div class="news-carousel-item news-carousel-item2">
+								        <div class="cover5">
+									        <a href="">
+										        <span class="news-span">
+										            <i class="fas fa-link"></i>
+										        </span>
+										        <img class="scale" src="assets/img/b-4.jpg">
+									        </a>
+								        </div>
+								        <div class="news-description">
+								            <a href="">10 Rules of SEO</a>
+								        </div>
+								        <div class="news-text">
+								            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dicta,inventore ...</p>
+								        </div>
+								        <div class="news-bottom">
+									        <span>
+									            <i class="fas fa-calendar-day"></i>
+									            May 21, 2016
+									        </span>
+								            <span>
+								                <i class="fas fa-user"></i>
+								                / Admin
+								            </span>
+								            <span style="float: right; padding-top: 5px; ">
+								                <i class="fas fa-eye"></i>
+								                256
+								            </span>
+								        </div>
+							        </div>
+							    </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+		
+<div class="clients">
+	<div class="container">
+		<div class="clients-title">
+			Our Clients
+			<span>/ Companies that have chosen us</span>
+		</div>
+		<div class="clients-carousel">
+			<div class="row">
+			    <a href="">
+			    	<img src="assets/img/c-6.png">
+			    </a>
+			    <a href="">
+			    	<img src="assets/img/c-1.png">
+			    </a>
+			    <a href="">
+			    	<img src="assets/img/c-2.png">
+			    </a>
+			    <a href="">
+			    	<img src="assets/img/c-3.png">
+			    </a>
+			    <a href="">
+			    	<img src="assets/img/c-4.png">
+			    </a>
+			    <a href="">
+			    	<img src="assets/img/c-5.png">
+			    </a>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+				<a href="">
+					<img src="assets/img/logo-gray.png" style="width: 145.516px; height: 50px;">
+				</a>
+				<ul class="footer-contacts">
+					<li>
+						<i class="fas fa-map-marker-alt"></i>
+					    Adress: 142 Central, San Francisco
+					</li>
+					<li>
+						<i class="fas fa-mobile"></i>
+					    Phone: +38 (023) 287 - 52 - 31
+					</li>
+					<li>
+						<i class="fas fa-envelope"></i>
+					    E-mail: support@email.com
+					</li>
+					<li>
+						<i class="fas fa-desktop"></i>
+					    Site: themeforest.net/user/gryndii
+					</li>
+					<li>
+						<i class="far fa-clock"></i>
+					    Open: from 8 am to 6 pm
+					</li>
+				</ul>
+				<ul class="footer-social">
+					<li>
+						<i class="fab fa-vimeo-v"></i>
+				    </li>
+					<li>
+						<i class="fab fa-instagram"></i>
+				    </li>
+					<li>
+						<i class="fab fa-github"></i>
+				    </li>
+					<li>
+						<i class="fab fa-facebook-f"></i>
+				    </li>
+					<li>
+						<i class="fab fa-twitter"></i>
+				    </li>
+					<li>
+						<i class="fab fa-google-plus-g"></i>
+				    </li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+				<div class="footer-title">Recent tweets</div>
+				<ul class="footer-twitter">
+					<li style="margin-bottom: 15px;">
+						<i class="fab fa-twitter"></i>
+						<a href="">@laconic</a>
+						Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        <a>https://twitter.com/tweet</a><br>
+                        3 days ago
+                    </li>
+					<li>
+						<i class="fab fa-twitter"></i>
+						<a href="">@laconic</a>
+						Lorem ipsum dolor sit amet, consectetur adipisicing.
+						<a>https://twitter.com/tweet</a><br>
+                        4 days ago
+                    </li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+			    <div class="footer-portfolio">
+				    <div class="footer-title">Flickr Photos</div>
+				    <div class="row">
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i1" class="portfolio-image">
+				        	<a href="">
+				        		<img src="assets/img/15647274066_2ee48c3fe9_s.jpg">
+				        	</a>
+				        </div>
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i2" class="portfolio-image">
+				        	<a href="">
+				        		<img src="assets/img/15485436268_846ccca178_s.jpg">
+				        	</a>
+				        </div>
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i3" class="portfolio-image">
+				        	<a href="">
+				        		<img src="assets/img/15668911091_4ef20118b5_s.jpg">
+				        	</a>
+				        </div>
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i4" class="portfolio-image">
+				        	<a href="">
+				        		<img src="assets/img/15484954949_a4e97a9dc5_s.jpg">
+				        	</a>
+				        </div>
+				    </div>
+				    <div class="row">   
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i5" class="portfolio-image"><a href="">
+				        	<img src="assets/img/15647103116_1e4b9033f0_s.jpg">
+				        </a>
+				        </div>
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i6" class="portfolio-image"><a href="">
+				        	<img src="assets/img/15668909741_eaf3db4054_s.jpg">
+				        </a>
+				        </div>
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i7" class="portfolio-image"><a href="">
+				        	<img src="assets/img/15670834825_5f55bb7e4e_s.jpg">
+				        </a>
+				        </div>
+				        <div onmouseover="lighton()" onmouseout="lightoff()" id="i8" class="portfolio-image"><a href="">
+				        	<img src="assets/img/15485435298_7848e85e0a_s.jpg">
+				        </a>
+				        </div>
+                    </div> 
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">Copyright © 2016 Laconic. Created by Gryndii</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<ul class="justify-content-end">
+						<li>
+							<a href="">Home</a>
+						</li>
+						<li>
+							<a href="">About Us</a>
+						</li>
+						<li>
+							<a href="">Portfolio</a>
+						</li>
+						<li>
+							<a href="">Blog</a>
+						</li>
+						<li>
+							<a href="">Buy</a> 
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 	  
+
+
+ 
+			
+	
+	
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/laconic.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
